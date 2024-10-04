@@ -11,11 +11,11 @@ def generate_launch_description():
     return LaunchDescription(
         [
             Node(
-                package="joy",
-                executable="joy_node",
-                name="joy_node",
-                parameters=[] #ros2 uses events, so don't try and direct this to /dev
-            ),
+                package="teleop",
+                executable="joy_interpreter",
+                name="joy_interpreter",
+                parameters=[]
+            )
         ]
     )
 
