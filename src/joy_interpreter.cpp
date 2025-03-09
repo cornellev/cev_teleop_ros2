@@ -66,12 +66,12 @@ private:
         // Calculate velocity
         float drive = 0.0;
 
-        if (gamepad_data.get_y_button()) {
-            drive = .3;
-        } else {
+//        if (gamepad_data.get_y_button()) {
+//            drive = .3;
+//        } else {
             drive = (gamepad_data.get_right_trigger() - gamepad_data.get_left_trigger())
                     * max_velocity_;
-        }
+//        }
 
         // float drive = (gamepad_data.get_right_trigger() - gamepad_data.get_left_trigger())
         //               * max_velocity_;
