@@ -58,7 +58,7 @@ private:
         LogitechRead gamepad_data(msg->axes, msg->buttons);
 
         // Calculate turning angle
-        float turn = -gamepad_data.get_right_stick_x() * max_turning_angle_;
+        float turn = -gamepad_data.get_right_stick_x();
         if (std::abs(turn) < deadzone_) {
             turn = 0.0;
         }
